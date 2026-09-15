@@ -69,6 +69,25 @@
 // else{
 //     shopDiscount = 0;
 // }
+// if(shopDiscount < 10 && discountCard == 1){
+//     shopDiscount = 10;
+// }
+
+// let deliveryprice = 0;
+// switch(dostavka){
+//     case 'Пошта':
+//         deliveryprice = 100;
+//         break;
+//     case "курьєр":
+//         deliveryCost = 200;
+//         break;
+//     case "самовивіз":
+//         deliveryCost = 0;
+//         break;
+// }
+// let ZnizhkaProductPrice = allprice * (1 - shopDiscount / 100);
+// let finalprice = ZnizhkaProductPrice + deliveryprice;
+// alert(finalprice);
 
 
 
