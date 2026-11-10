@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Налаштування профілю</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+<div class="card">
+  <h2>Налаштування профілю</h2>
+
+  <div class="field">
+    <label for="username">Ім’я користувача:</label>
+    <input type="text" id="username" placeholder="Введіть ваше ім’я">
+    <p id="greeting" class="preview-text">Введіть ім’я вище...</p>
+  </div>
+
+  <div class="field">
+    <label for="themeSelect">Тема оформлення:</label>
+    <select id="themeSelect">
+      <option value="light">Світла</option>
+      <option value="dark">Темна</option>
+    </select>
+  </div>
+
+  <button id="toggleBtn" type="button">Показати додаткову інформацію</button>
+
+  <div id="infoBlock" class="info-block hidden">
+    <p><strong>Статус акаунта:</strong> Активний</p>
+    <p><strong>Дата реєстрації:</strong> 10.11.2026</p>
+  </div>
+
+  <hr>
+
+  <button id="saveBtn" type="button" class="btn-primary">Зберегти зміни</button>
+  <p id="saveMessage" class="status-message hidden">Зміни успішно збережено!</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
