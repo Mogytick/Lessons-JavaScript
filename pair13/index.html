@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Клуб подій</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+    <header class="app-header">
+        <h1>Клуб подій</h1>
+    </header>
+
+    <div class="content-grid">
+        <section class="form-section">
+            <h2>Нова заявка</h2>
+            <div class="form-group">
+                <label for="participantInput">Ім'я учасника</label>
+                <input id="participantInput" type="text" placeholder="Введіть ім'я">
+            </div>
+
+            <div class="form-group">
+                <label for="eventInput">Назва події</label>
+                <input id="eventInput" type="text" placeholder="Введіть назву події">
+            </div>
+
+            <button id="addButton" type="button"> Додати заявку</button>
+        </section>
+
+        <section class="list-section">
+            <h2>Учасники</h2>
+
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span>Усього заявок</span>
+                    <strong id="totalCounter">0</strong>
+                </div>
+                <div class="stat-card">
+                    <span class="muted-text">Підтверджено</span>
+                    <strong id="confirmedCounter">0</strong>
+                </div>
+            </div>
+
+            <div id="emptyMessage" class="empty-msg">Заявок поки немає</div>
+
+            <div id="cardsList" class="cards-list"></div>
+
+            <button id="clearAllBtn" class="clear-all-btn hidden" type="button">Очистити всі заявки</button>
+        </section>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
